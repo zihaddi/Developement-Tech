@@ -1,0 +1,20 @@
+Email Sending (Queued for Performance)
+Step-by-Step Logic
+Create a Mailable (Email Template)
+
+bash
+php artisan make:mail OrderConfirmation
+Design Email (Blade Template)
+
+php
+// resources/views/emails/order.blade.php
+<h1>Order #{{ $order->id }} Confirmed!</h1>
+Send Email (From Controller/Listener)
+
+php
+Mail::to($user)->send(new OrderConfirmation($order));
+Queue for Faster Responses
+
+php
+Mail::to($user)->queue(new OrderConfirmation($order));
+Requires Redis/database queue setup.
