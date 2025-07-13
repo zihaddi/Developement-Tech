@@ -1,0 +1,32 @@
+                                                                    Event Management (Decoupled Logic)
+
+Why Use Events?
+Keeps code clean (e.g., don’t put email logic inside a controller).
+Scalable (add more listeners without modifying the original event).
+
+Step-by-Step Event Flow
+Define an Event (e.g., OrderPlaced)
+
+
+php artisan make:event OrderPlaced
+Create Listeners (Actions to Perform)
+
+
+php artisan make:listener SendOrderConfirmationEmail --event=OrderPlaced
+    Register in EventServiceProvider
+    
+    protected $listen = [
+        OrderPlaced::class => [
+            SendOrderConfirmationEmail::class,
+            UpdateInventory::class,
+        ],
+    ];
+
+
+Dispatch the Event
+
+    event(new OrderPlaced($order));
+
+Listeners Execute
+    Send email, update stock, log analytics, etc.
+
