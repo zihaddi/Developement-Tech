@@ -1,0 +1,209 @@
+### AI শেখার রোডম্যাপ: শুরু থেকে অ্যাডভান্সড লেভেল পর্যন্ত
+
+এই টেক্সটটি একটি ভিডিও ট্রান্সক্রিপ্টের উপর ভিত্তি করে সংগঠিত করা হয়েছে। আমি এটাকে স্পেলিং সংশোধন করে, অসম্পূর্ণ শব্দগুলো পূর্ণ করে এবং লজিক্যাল সেকশনে বিভক্ত করে সাজিয়েছি। প্রত্যেক সেকশনের শিরোনাম দিয়ে স্পষ্ট করা হয়েছে, যাতে পড়তে সুবিধা হয়। ইংরেজি টেকনিক্যাল টার্মগুলো যথাসম্ভব রেখে দেওয়া হয়েছে, কারণ এগুলো AI-এর কনটেক্সটে স্ট্যান্ডার্ড।
+
+#### ১. ভূমিকা: AI শেখার শুরু এবং রোডম্যাপ
+AI শিখতে চান, কিন্তু কোথা থেকে শুরু করবেন? ম্যাথ কতটা দরকার? নাকি সরাসরি প্র্যাকটিসে ঝাঁপ দেবেন? আপনি যদি ফ্রেশার, মিডলেভেল বা অ্যাডভান্সড লেভেলের হন, তাহলে একটা সহজ সারল রোডম্যাপ ফলো করবো। বেসিক ম্যাথ থেকে শুরু করে ML, DL, Generative AI, Agentic AI পর্যন্ত পথে পথে বাস্তব উদাহরণে বুঝবো। RAG, MCP আর দরকারি বিষয়গুলো কীভাবে শিখবো, সেটা হবে অদ্বিতীয়।
+
+এই ভিডিওতে আপনারা properly জানতে পারবেন যে actually AI দুনিয়াতে একটার পর একটা ধাপ কীভাবে আসে। আপনি যদি একজন মিডলেভেল ডেভেলপার হয়ে থাকেন, তাহলে কী করবেন? আপনি কোন ফিল্ডে যাবেন? সবকিছু সম্পর্কে একটা ধারণা দেবো।
+
+প্রথমে আমি জিনিসটাকে এমনভাবে নিয়ে যাবো যে পুরো AI দুনিয়াতে start to end কীভাবে actor পর actor stage দিয়ে জিনিসগুলো গড়ে ওঠে। আপনি থুড়ি করে AI-তে চলে যেতে পারবেন না, আপনাকে অবশ্যই কিছু pre-requisite থাকা লাগবে। এবং সেই জায়গাতে চলে আসছে math। তো সবার প্রথমে AI জায়গাটা এরকম ফেল না করার চেষ্টা করা যায় না। আমরা যেরা ডেভেলপাররা, তারা অনেক সময় ম্যাথ না শিখেও ডেভেলপ করি, কিন্তু AI-তে অবশ্যই math জানতে হবে। আপনি যদি theoretical জায়গায় থাকতে চান, তাহলে math জানতে হবে। এবং এই জিনিসটা কিন্তু নতুন নয়।
+
+আমি step by step আপনাকে নেবো, আপনারা ভয় পাবেন না, আস্তে আস্তে লেগে থাকুন, তাহলে আপনারা বুঝতে পারবেন আমি কী বলতে চাইছি।
+
+#### ২. Pre-requisites: Math এবং Programming
+সবার প্রথমে linear algebra। এই জিনিসটা শুনে আপনারা ঘাবড়ে যান, কিন্তু খেল করে দেখুন, আমরা আমাদের school, college, university-তে linear algebra শিখেছি। তো linear algebra সম্পর্কে আপনার ভালো ধারণা থাকা লাগবে। সেকেন্ড যে জিনিসটা, সেটা হচ্ছে statistics। Statistics কী? এটা হচ্ছে সংখ্যা যা ফাংশনের ভালোভাবে কাজ করে। একজন প্রোগ্রামারের জীবনে এবং বিশেষ করে একজন মেশিন লার্নিং ইঞ্জিনিয়ারের জীবনে statistics খুব গুরুত্বপূর্ণ।
+
+এখানে কিন্তু কোনো প্রবাবিলিটির ব্যাপার নাই, কিন্তু AI দুনিয়াতে সবকিছু কিন্তু প্রবাবিলিটির উপরে। আপনি একই কোয়েশ্চেন করলে তারপরে চলে আসবে mean, তারপরে চলে আসবে derivatives। এই জিনিসগুলো কিন্তু মাস্ট। চলে আসবে এইগুলোর উপরে আপনার ভালো ধারণা থাকা দরকার। তো এই জিনিসগুলো সম্পর্কে আপনি ভালো ধারণা না থাকলে, আপনি কিন্তু কোনোভাবে এই আসলে মেশিন লার্নিং-এর রিসার্চ এরিয়াতে, বা রিয়েল অ্যাপ্লিকেশনে যেতে পারবেন না।
+
+এবং যদি আপনি একজন মেশিন লার্নিং ইঞ্জিনিয়ার হন, তাহলে আপনার জন্য গোটু ল্যাঙ্গুয়েজ হচ্ছে Python। খেয়াল করে দেখুন, Python কিন্তু মেশিন লার্নিং-এর জন্য সবচেয়ে suitable। JavaScript যেমন ওয়েব ডেভেলপমেন্টের সাথে খাপ খেয়ে যায়, কিন্তু এই প্রোগ্রামিং ল্যাঙ্গুয়েজগুলোর মধ্যে Python-এর maximum কাজ মেশিন লার্নিং-এ suitable হয়। একজন প্রোগ্রামার হিসেবে যারা এখন অলরেডি প্রোগ্রামার হয়ে গেছেন, তারা বুঝতে পারবেন। আপনি যদি ওয়েব কাজ করেন, আপনাকে JavaScript কাজ করতে হতে পারে; back-end করলে PHP; front-end করলে React।
+
+Python-এ rich libraries আছে, যেমন ধরেন, numbers নিয়ে কাজ করবেন, তো numpy। তো Python-এর বিভিন্ন libraries এবং ecosystem related জিনিসগুলো আমাদের জানা দরকার to apply our mathematic knowledge। তো এই কাজগুলো করে আসলে আমরা মেশিন লার্নিং-এ চলে আসি।
+
+#### ৩. AI-এর Overview: AI, ML, DL, Generative AI, Agentic AI
+AI-এর মধ্যে এটার একটা সাবসেট হচ্ছে ML। তো আমি যেটা করি, এইভাবে লিখি: AI এই পুরো গোলাটা হচ্ছে AI, এবং এটার মধ্যের একটা ছোট অংশ machine learning। Machine কে teach করার জন্য হয় এই যে machine কে আপনি শিখাবেন, এই শিখানোর কাস্টাই হচ্ছে machine learning। এটা কিন্তু research-এর জায়গা, real applications না। আপনি machine কে বিভিন্ন জিনিস শিখাবেন।
+
+তো আপনি যদি এই জায়গাতে ক্যারিয়ার করতে চান, এখান থেকে কিন্তু সব পুরো জার্নির শুরু। তো এই জায়গাতে যদি আপনি কাজ করতে চান, তাহলে AI-এর মধ্যের একটা subset হচ্ছে ML (machine learning), তারপরে আসবে deep learning, এবং finally আসবে generative AI। এখানে ছোট হয়ে যাচ্ছে। যাইহোক, বাজে হয়ে গেছে, যেটাই হোক, আপনারা বুঝবেন না কী। তো AI-এর মধ্যে machine learning, তার একটা subset হচ্ছে deep learning, তারপর একটা subset হচ্ছে generative AI। সেখানে আমরা মলো তো অ্যাপ্লিকেশন মানকো, যেগুলো মানুষ ব্যবহার করবে, বিভিন্ন বিজনেস ব্যবহার করবে। So, this is the entire flow। তো এটাই complete AI world: AI, machine learning, deep learning, generative AI এবং right now agentic AI।
+
+মানে যেহেতু আমি deep learning-এর কথা বলেই ফেললাম, তো চলুন তাহলে আমরা বুঝে ফেলি যে machine learning এবং deep learning-এর মধ্যের ডিফারেন্সটা কী। Right? এইটা হচ্ছে machine learning। Deep learning কী? Deep learning হচ্ছে machine learning-এর একটা special type, যেটা হচ্ছে আরেকটু advanced, যেটা হচ্ছে human brain-এর মতো করে চিন্তা করতে পারে। Like human brain কীভাবে কাজ করে? আমরা deep thinking করি, যা part of machine learning, কিন্তু deeply শেখানো হয়। তো deep learning কখন হবে? যখন আপনি এই বাইরের বাইরে যাওয়া, আপনি বিভিন্ন ভিডিও টিউটোরিয়াল দেখছেন, বিভিন্ন ব্লগ পড়ছেন, তো এই যে আপনার brain automatic কানেক্ট করে, এই যায়গাটা এইটা হচ্ছে deep learning। তো ওটা যেটা করতে চাইছে, সেটা হচ্ছে মানুষের মাথায় সৃষ্টি করতে।
+
+#### ৪. Machine Learning-এর ধরন এবং অ্যালগরিদম
+এবার চলুন আমরা চলে যাই যে machine learning-এর different জায়গাগুলোতে। তো machine learning-কে আমরা ML বলছি। তো এখানে মুলত দুইটা জিনিস: একটা supervised learning এবং unsupervised learning। এই জিনিস যেটা হচ্ছে important। Supervised learning মানে কী? নাম শুনেই বোঝা যায়, supervised মানে already defined। যেমন ধরুন, আপনার বাচ্চাকে ফল চেনাচ্ছেন। তো সে কী করলো, এগুলো তার মাথায় মনে রাখলো যে ওকে, এটা হচ্ছে অ্যাপেল, এটা হচ্ছে অরেঞ্জ, এবং পরবর্তীতে আপনি যখন তাকে জিজ্ঞাসা করবেন, সে বলবে।
+
+Unsupervised হচ্ছে, just এই analogy-টাকে এইভাবে চিন্তা করেন, যে আপনি তাকে সরাসরি ফলের নাম না বলে, একসাথে অ্যাপেল, কমলা, এবং আঙুর দিলেন। তখন সে কী করবে? তার নিজের বুদ্ধি অ্যাপ্লাই করে জিনিসগুলোকে colour, structure অনুসারে সিমিলারিটি খুঁজে বের করবে। তার মানে এখানে আউটপুটটা কিন্তু আমরা জানি না। যা এমনো হতে পারে, আরেকজন ছেলে সে কিন্তু অন্যভাবে টাইপ করতে পারে। থেকে colour kind of একই ধরনের colour দুটাকে দেখে এক লাইনে রেখে দিয়েছে। এমন হতে পারে, আবার যেকোনো deep thinking বেশি করবে, সে তখন structure অনুসারে।
+
+Supervised learning-এর মধ্যে মুলত দুই ধরনের জিনিস: একটা classification আর একটা regression। Classification শুনেই আপনি বুঝতে পারছেন, for example, আপনি আপনার output চাইবেন এই রকম kind of a prediction। যেমন আপনি একটা ফল দিলেন, দিয়ে আপনি ধরেন বললেন, তুমি আমাকে বলো এটা কী। তো আগেটা ছিলো কিন্তু একদম classify করে দেবা যে this is আঙুর, this is orange। কিন্তু এখন কিন্তু আপনি একটা weight প্রেডিক্ট করছেন। So, both খেত্রে, এই supervised learning-এর খেত্রে একটা হচ্ছে classification, আর একটা হচ্ছে regression। Clear।
+
+এই যে কথাগুলো বলছি, এইগুলো কিন্তু আমরা আমাদের প্রোগ্রামিং-এ যেমন different type of data structure এবং algorithm ব্যবহার করি, ঠিক একইভাবে এই জিনিসগুলো। Regression-এর পরে আছে polynomial regression-এরকম different type of algorithm সম্পর্কে আপনার জানতে হবে। এবং এই algorithm-গুলোর প্রত্যেকটার সাথে prerequisite হচ্ছে আপনাকে এই জিনিসগুলো জানা। তো এই যে গুলো যখন আপনি বুঝবেন, তখনি এগুলো implement করবেন। আপনি byte-এ দি এই হচ্ছে খেলাটা। এখানে আমি classification-এ random forest, k-means-এরকম বেশ কিছু algorithm আছে, যেগুলো আমি এক জায়গায় লিখে রাখলাম। তার মানে মুলত আমি যে জিনিসটা আপনাদেরকে কঠিন টার্ম দেখে ভয় পাবেন না। Flow ছোটবেলায় আমরা উপপাদ্য, সম্পাদ্য এগুলো পড়েছি, so these are that kind of things। যারা এই জিনিসগুলো বুঝেন, যারা এই প্রসেসগুলো জানেন, তাদের জন্য সহজ।
+
+তো মুলত যদি আমি big picture-টা আপনাদেরকে দেই, big picture-টা হচ্ছে এরকম যে just একদম simple। আমরা আসলে করছিটা কী? আমরা আসলে মুলত এখানে একটা input দিই, black box বা ধরেন anything বড়ো কিছু একটা। সেই black box-এর মধ্যে নিয়ে সেই black box-এর কাছে যাবে এবং ultimately সেই black box-এর মাধ্যমে আমরা এখানে output বের করবো। তো এই যে পার্টটা যে এই black box আসলে কী করবে আমার input-টা নিয়ে, what best it can do to generate the best output, সেই জিনিসটাই হচ্ছে আমাদের কাজ। যেমন Anthropic-এর Claude সেটা খুব কোড ভালো জানে, আমরা বলি ChatGPT boy-এর natural language-এর অন্যান্য জিনিস। So, that's the big picture। Clear? তো আমরা তাহলে কী করলাম? আমরা machine learning-এর different-different algorithm সম্পর্কে জানলাম। আমরা supervised learning সম্পর্কে জানলাম। আমরা unsupervised learning সম্পর্কে জানলাম।
+
+#### ৫. Deep Learning-এর অ্যাপ্লিকেশন: NLP এবং Computer Vision
+এবার ১ হচ্ছে যদি আমি বড়ো এরিয়াতে ভাগ করি, ১ হচ্ছে NLP বা যেটাকে বলা হয় Natural Language Processing। এটা হচ্ছে একটা পার্ট, আর একটা হচ্ছে Computer Vision। তো NLP বা Natural Language Processing এটা শুনেই বোঝা যায়। Natural মানে আমাদের human language, যেমন আমাদের ChatGPT-কে বিভিন্ন কথা আমাদের ভাষায় বলি: বাংলা, ইংরেজি, স্প্যানিশ, হিন্দি, পাক, উর্দু, সবকিছু। Next word predict করতে করতে চায় সে দেখে যে তাকে যেভাবে train করা হয়েছে, user যেটা বলছে, সে অনুযায়ী response দেবে।
+
+তো আমরা অনেকে মনে করি যে আমাদের ChatGPT যে response-টা দিছে, যে typing format-এর response দিছে, এটা মনে হয় একটা শুন্য। So, এই পার্টটা হচ্ছে যেটা neural network-এর উপরে base করে করা, এবং এটাই হচ্ছে NLP। এবং এই NLP-র implementation-ই হচ্ছে different type of AI applications যেগুলো আমরা দেখছি: CGPT বলেন, Claude বলেন। Images এইগুলো নিয়ে কাজ করে। Clear। এখানে ও প্রচুর কাজ হচ্ছে। তো মুলত এই যে NLP-র কথাটা বললাম, এই NLP জিনিসটাই হচ্ছে মুলত।
+
+এখানে মুলত NLP-র different type of variants আছে: যেমন RNN, LSTM, RNN, GRU, Encoder, Decoder, তারপরে Transformer। এই যে কয়েকটা নাম বললাম, এইগুলো হচ্ছে এই Natural Language Processing-এ different different variant। এর মধ্যে Transformer Architecture এই জিনিসটা হচ্ছে মুলত different type of architecture ফলো করা হতো। Google-এর একটা research team তারা transformer architecture-কে মানুষের সামনে যে দিন যে paper-টা তারা publish করে ছিলো, আপনার যে। তো এখানে মুলত তাদের এজে Google Brain হে। তো এজে আসীর ভাষানি তাকে বলা হয় এটার জনক কী। তো এই টিমটা মুলত তারা হচ্ছে।
+
+Research করলো Google, publish করলো Google টিম, application বানিয়ে market-এ চলে আসলো OpenAI। Google কিন্তু বড়ো company হয়েও OpenAI যেহেতু তারাই show-টা নিলো এবং তারা চু। তো এখান থেকে আমাদেরকে একটা learning নিতে হবে: Ultimately, matter করে how fast you can come to the market। তো আপনি কী application বানাচ্ছেন? Ultimately, আমরা এতো research করছি, এতো learning করছি, এতো কিছু করছি, it doesn't make sense। At the end, তুমি application development is the main thing। এগুলো হচ্ছে research area। Definitely, these are also main things। কিন্তু এগুলো scientist-দের জায়গা।
+
+এখন প্রশ্ন হচ্ছে, আপনি কী? এখন পর্যন্ত তো আপনি যতোটুকু জানলেন, না তো আপনি A type-এর high level কাজ করবেন। সেই জায়গাতে যদি আপনি যেতে চান, তাহলে definitely আপনাকে এই প্রসেস দিয়ে যেতে হবে। So any researcher হতে চাই না, এবং any এই জায়গাটা কিন্তু comparatively ছোট। আপনি scientist কিন্তু market-এ ভুরি ভুরি পাওয়া যায় না। Scientist কিন্তু আমরা বরং এই framework-গুলোকে ব্যবহার করে উল্টা ভুরি ভুরি application বানিয়ে টাকা ইনকাম করি। আপনি কোন জায়গায় যেতে চান?
+
+Transformer architecture হচ্ছে মুলত different type of elements, যেমন OpenAI models, তারপরে Google models, তারপরে Anthropic models, এছাড়া তো আমাদের Elon Musk-এর আছে তো Grok, তো অনেক কিছু। তো এই সবকিছুই কিন্তু ultimately transformer architecture-এর উপর। তো এই জায়গাগুলো নিয়ে মুলত deep learning-এর জায়গা। তো machine learning-এর একটা subset আমরা জানলাম deep learning, যেখানে মুলত এই জায়গাটাই হচ্ছে deep learning-এর জায়গা। এবং এই জায়গাতেই এই deep learning-এর জায়গাতেই যখন আসলো আমরা transformer-এ।
+
+প্রোগ্রামারদের দুনিয়ার শেষ। এই কাজটা করে উনি ভয়ংকর সর্বনাশটা করেছেন, কিন্তু সবাই ভাবে উনি জেনে বুঝে করেছেন। Uni যানো সবাই এই research-এ দিকে যাও শুরু করে, কিন্তু it's a wrong decision because not everyone will go to research। সবার এই research করার capacity ও থাকবে না। তো যেই জায়গাতে যে software engineering, programming-এর যে জায়গা stable হয়ে যাবে, যেটা already হয়ে যাচ্ছে। এখন কিন্তু large language model-গুলো মোটামুটি stable। এখন কিন্তু মুল জায়গাটা হচ্ছে পরের যে জায়গা, যেটা আমরা এখন জানি Nvidia বা এধরনের GPU যারা ব্যবসা করে, তাদের জন্য খুব জরুরি ছিলো। তো different type of generative ছড়ানো হয়েছে market-এ, but which is আপনি একই দিক দিয়ে রং বানাতে পারেন, আবার একই দিক দিয়ে আপনি যদি একজন learner হন, আপনি যদি সবকিছু নিয়ে পর্যালোচনা করেন।
+
+#### ৬. Generative AI: Frameworks, RAG এবং Applications
+তো এইবার যেই মুল জায়গা নিয়ে আমাদের developer existing, এতক্ষণ যে যগুলো আমি বললাম, এগুলো হচ্ছে যারা একদম এখন শুরু থেকে শুরু করবেন। এবং যারা কারণ এই জায়গাটা হচ্ছে এখনকার বর্তমান দুনিয়া, যেখানে সবচেয়ে বেশি কাজ হচ্ছে। এবং এই generative AI-টা হচ্ছে সে জায়গা, যে কোনো সমস্যা নাই, কিন্তু ultimately matter করবে যে কোন application-গুলো আসলে market-এ আসবে, যে গুলো মানুষ ব্যবহার করবে। তো সেই জায়গাটাই মুলতকে generative কেন বলা হচ্ছে? কারণ হচ্ছে এইটা কোনো কিছু generate করতে পারছে: image generate করতে পারছে।
+
+মানে আমরা যখন কোনো programming language শেখা শুরু করি, তখন আমরা কী করি? আমরা একটা fundamental phase দিয়ে যাই না? ওই fundamental open ও হতে পারে অথবা closed source, যেমন আমরা জানি কিছু open source আছে, যেমন OpenAI recently তাদের একটা model তারা open source করেছে। এরকম open এবং closed।
+
+Generative AI applications বলতে কী বোঝায়? যেমন এটা production-ready একটা application, যেটা business purpose-এ ব্যবহার করা হচ্ছে। এটা। তাই না? সেখানে যদি আপনার কোনো image generation-এর ব্যাপার থাকে, সেখানে একটা model ব্যবহার করা লাগতে পারে। যদি সেখানে কোনো। আমরা বিভিন্ন ধরনের framework ব্যবহার করি, যেমন আপনি একটা website বানাবেন, যখন আপনি একটা production-grade ওই application বানাবেন। LangGraph আছে, তারপরে Hugging Face আছে, তারপরে হচ্ছে Llama Index সম্ভবত, আরেকটা Llama Index আছে। So এগুলো হচ্ছে some big names, some big frameworks, যেগুলো হচ্ছে আমরা regular ব্যবহার করছি। এবং সেগুলোকে ব্যবহার করি কিন্তু আমরা মুলত বিভিন্ন রকমের generative applications এবং আমাদের business need-এ। Lora, Lora-এরকম বেশ কিছু জিনিস আছে।
+
+এর পরে আছে হচ্ছে RAG। A জায়গায় অসংখ্য কাজ হচ্ছে। RAG কী? Retrieval Augmented Generation। Retrieval augmented generation, দাদ ভাঙিয়া সব নাম, কিন্তু তথ্য পরিবর্তন হচ্ছে একই সাথে data-এর একটা মুল সমর্থন। হচ্ছে এগুলো কিন্তু কোনো source থেকে আমাদেরকে data দিছে। যে কবে course-এর দাম কতো, আপনার website-এর এই জায়গাটা password কীভাবে পরিবর্তন করবো, এই যে different কম। তো এরকম personalized, customized জায়গাতে আপনি যদি কাজ করতে যান, তখন আপনাকে RAG-এর সাহায্য নিতে হবে। RAG কী? RAG হচ্ছে retrieval করে প্রথম step। আপনি যোটি তাকে আরেকটা phase দিয়ে বলতে চান, যে তুমি আগে আমাকে উত্তর দিবে না, তুমি আগে কিছু একটা retrieve করবে কোনো। তো এটাকে retrieve করবে, তারপরে এটাকে augment করবে। Augment করা মানে কী? আরো গুছানো। তারপরে এই text।
+
+আমরা সবাই MySQL database-এর কথা জানি, আমাদের SQL, NoSQL database-এর কথা জানি। এই ক্ষেত্রে যে data গুলো রাখবো, সেই data গুলো তো huge। সেইগুলোকে রাখা হয় embeddings-এ। তো এইগুলোকে রাখা হয় embeddings technical term। আরো সহজভাবে video বলেন, tutorials বলেন, learning বলেন। আমি নিজেও শিখছি এখন। এই জায়গাতে হয়তো আমার contribution future-এ থাকবে। যদি আপনাদের দোয়া থাকে।
+
+Web development is going nowhere, software development is going nowhere। এইটা আরো smart হচ্ছে। Just চিন্তা করেন, আমরা এক সময় যদি আপনি কুপ সহজভাবে আপনি যদি একজন developer হন, আমরা এক সময় jQuery ব্যবহার করতাম। যারা React শিখে গেছে, তারা কিন্তু jQuery ব্যবহার করে নি, তারা React দিয়ে কাজ করছে, আরো better। এরপরে React নিয়ে যারা অনেক দিন কাজ করছে, এরপরে। কিন্তু তাহলে সুন্দর হচ্ছে, কাজ better হচ্ছে, application-গুলো আরো advanced হচ্ছে এবং more user-friendly হচ্ছে। Anyways, so এই যে গেলো generative AI, অনেকে এখানে ধামাচাপা দেবে, কিন্তু মুল বিষয়টা এখনো বাকি।
+
+#### ৭. Agentic AI: ভবিষ্যতের দিক এবং Tools
+সেটা হচ্ছে এখনকার দুনিয়ার, সেটা হচ্ছে agentic AI। Filter হয়ে হয়ে আছে more specific কাজের দিকে যাচ্ছে। So agent-কে আই হচ্ছে সেই জায়গা। সেই জায়গাতে আমরা বিভিন্ন agent-কে দেখতে পাই। Agentic AI মানে কী? ধরুন, আপনার, for example, আমাদের software development ক্ষেত্রে, আমরা বিভিন্ন ধরনের text editor-এ, আমরা code editor-এর মধ্যে, আমরা কিন্তু এখন agent mode-এ বিভিন্ন। Text prediction দিচ্ছে এবং আমাদেরকে text generate করে দিচ্ছে, উত্তর দিচ্ছে, কোনো কাজ করে দিচ্ছে না। Automation industry-তে help করতে পারছে না। ধরুন for example, আপনার site আপনি বানালেন, আপনি acting as a agent, so আপনার একজন assistant। সোজা কথা, so সেই জায়গাটাই হচ্ছে agentic AI। এবং সেখানেও কিছু term আমি বলে ফেলি, সেটা হচ্ছে AI agents। এই কথাগুলো মানে শুনবেন, যেগুলো massively কাজ করছে।
+
+Because JavaScript was always a game changer। কীভাবে? সে কখনোই research-এ যায় নি, but যখন implementation-এর জায়গা আসছে। আপনি যদি hardware industry-এর কথা বলেন, hardware-এ যখন software-এর communication হয়, তখন সেখানে connect করে। আর কী? কিন্তু চিন্তা করে দেখেন, আপনি USB-C ছাড়া আপনি external device connect করতে পারেন? JavaScript play the role of that USB-C device। ঠিকাছে? সে সব যায়গাতে plug-in করতে পারে। এবং যাতো agentic AI-এ JavaScript is great। সমস্ত কিছু আপনি যে কোনো technology বলেন, AI related-এ agentic AI, agentic AI applications।
+
+এখানে চলে আসছে MCP, Model Context Protocol। যারা এই জিনিসটে সম্পর্কে জানেন না, তারা আমার একটা video আছে, in depth, বাংলায় আছে। সেটা দেখে নিন। এটা হচ্ছে একটা protocol, যেটা kind of RAG-এর মতো। এটা কী করে? RAG কী করে? RAG হচ্ছে আপনার LLM-কে বাইরের কিছু external তথ্য তাকে দিয়ে আরো কিছু data তার কাছে context। REST API-এর মতো যে আমরা data কিন্তু বিভিন্নভাবে দিতে পারি: XML-এ দিতে পারি, আমি এলো path-এ দিতে পারি, JSON-এ দিতে পারি, image দিতে পারি।
+
+এ জায়গাটাই কিন্তু আমাদের developer-এর বিশাল জায়গা। আরস্তে সে সামনে আছে। এছাড়া আছে Google-এর ও আছে Atu A, Google Atu A বলে একটা। LangGraph, LangChain, Hugging Face এইগুলো তো আছেই। তারপরে আপনার Crew AI নাম করা কিছু জিনিস, নাম লিখে দিচ্ছি: Crew AI আছে, তারপরে Agno আছে, Google এই তো আছেই, তারপরে AutoGen আছে। তারপরে হচ্ছে এখানে ও Rex আছে। করণ হচ্ছে এখানে ও আমাকে এই same কাজটাই করতে হবে, কিন্তু agentic way-এ। সে হচ্ছে agentic AI এবং আর ওর detail-এ বললে generative AI এই জায়গাটা হচ্ছে পুরো software engineering-এর জায়গা। এবং সামনের দুনিয়ায় AI এই জায়গাতে সবচেয়ে বেশি কাজ থাকবে।
+
+তো এইবার আমরা developer এখানে play করবো। তো বিভিন্ন tool ব্যবহার করবো, তাদের বিভিন্ন API ব্যবহার করবো, বিভিন্ন protocol follow করবো। Definitely সেখানে অনেক কিছু হয়েছে, কিন্তু ultimately কিন্তু এটা profit করতে পারছে না। এবং এরা কী করছে? এরা বিভিন্ন research কাজ করছে, এবং এর research কাজগুলো everywhere, যেমন আমরা যালে প্রোগ্রামার, যালে আমরা application বানাই। আপনি চিন্তা করে দেখেন, তো আপনি আপনার কোনো client-কে আপনি তো এই কথা যদি আপনি তাদেরকে বলেন, আপনা application কিনবে কেউ? এই জায়গাতেই এই দুর্বলতা এবং এই যে predictability unpredictable।
+
+Amar একটা model বানিয়ে ফেল্তাম, আমার একটা clone থাকতো, সেই clone, আমার voice-ও clone থাকতো। Even আমি আমার English channel-এরকম একটা video দিয়ে ছিলাম। পর আপনারা কিন্তু accept করবেন না। My company was analysed and we won the ICT and National Award with the help of bots। But ultimately, when the production team bought my client, they were very excited। Then, when the customers made a mistake in some cases or a robotic reply, then the customers complained and they did not keep it। And this is still happening in the whole world। Kono AI application-i কিন্তু 100% কোনো কিছুকে replace করে দিয়ে সেটা কিন্তু হয় নি। আপনারা অনেকে বলতে পারেন, AI তো কে বলি শিশু, হয় তো আরো হবে ভাই। তাই না? এই কারণে আগাতে পারছে সে company-গুলো কিন্তু আপনি AI-কে যে training-টা করছেন, সেই training-টা আপনি কারেন context-এ।
+
+Bill Gates যিনি বলেছেন যে সবচেয়ে বেশি benefit-এর হবে হচ্ছে programmer-রা। Because এই জায়গাতে programmer-দের যে value সুন্দর যে চাকরি চলে যাচ্ছে, এটা হচ্ছে ওটা হচ্ছে চাকরি চলে যাচ্ছে। কাদের? যারা এখন AI যে কাজটা করতে পারছে, সেই তুকু কাজ। That's the change that's happening। এর মানে এই নয় যে আসলে AI চাকরি খেয়ে দিচ্ছে। AI definitely যেই কিছু একদম যেই জায়গাটা আসলে monotonous, যারা নিজেদেরকে upgrade করতো না, যারা। তো এই কারণে ভয় পাবেন না যারা programmer। এই programming career-টা হোতে যাচ্ছে সবচেয়ে এখন আরো বেশি lucrative। সবচেয়ে আপনি কোন tool ব্যবহার করবেন, কোনটা সহজভাবে নেবেন, সেটা হচ্ছে আপনাকে choose করতে হবে। তো সামনের দিনে কী change-টা হবে? আপনি এখন একটা search box-এ লিখছেন যে ধরুন আপনি learn to summit-এর একটা search করছেন, name লিখে search করলেন। তো একসাথে আপনাকে অনেক agentic কাজ করে দিবে যে আপনা আপনি কোনো flight booking একলে একমন আমরা কী করি? Credit card দিয়ে। A কোয়েশ্চেনটা বলে দেয়ার সাথে সাথে আপনাকে সে booking টুকিং complete করে সে আপনার একটা confirmation নিয়ে পুরো process-টা শেষ করে দিবে।
+
+তারা বেশি pressure-এ আছে bigs, তাদের funding শেষের পথে। সারা পৃথিবীতে investor-দের fund-এ তারা এটা দিন research করছে। তো এ কারণে recently OpenAI Windsurf-কে কিনে নিতে চেয়েছে। তো developer-এ যদি চলে যাবে, তারা developer-দের জন্য code editor-টা সে। My data। যে থেকে আছে, তার মানে একটা থেকে। সে তখন তার database দেখে ফেলছে, নিজেকে train করছে। তো এই জায়গাগুলোতেই মুলত ব্যবসা তারা।
+
+#### ৮. ক্যারিয়ার পাথ এবং উপদেশ
+তো আশা করি আজকের ভিডিওটা আপনাকে AI এবং AI জায়গাতে career path এবং সবকিছু নিয়ে একটা big picture আপনাকে দিলো। তো আপনি যদি আজকে varsity-তে এসেছেন। Definitely, ছাই মাস, এক বছর, আপনাকে maths কে ভালো করে করতে হবে, then আপনাকে machine learning, different algorithm নিয়ে জানতে হবে, আপনাকে Python শিখতে হবে, then আপনি এই জায়গাতে কা। তো আশা করি আজকের ভিডিওটা আপনার জন্য একটা eye opener হিসেবে কাজ করবে। দেখা হবে পরের কোনো ভিডিওতে, যেখানে আমি generative AI নিয়ে অবশ্যই।
+
+
+
+
+
+
+
+
+
+এআই শেখার সম্পূর্ণ গাইডলাইন (AI Learning Guide in Bangla)
+১. ভূমিকা (Introduction)
+এআই (AI) বা কৃত্রিম বুদ্ধিমত্তা বর্তমান বিশ্বের সবচেয়ে চাহিদাসম্পন্ন টেকনোলজি। এটি শেখার জন্য সঠিক রোডম্যাপ, গণিতের বেসিক এবং প্রোগ্রামিং দক্ষতা প্রয়োজন। এই গাইডে ধাপে ধাপে এআই শেখার পদ্ধতি, প্রয়োজনীয় স্কিল এবং ক্যারিয়ার অপশন নিয়ে আলোচনা করা হয়েছে।
+
+২. এআই শেখার পূর্বশর্ত (Prerequisites)
+ক. গণিত (Mathematics)
+এআই বুঝতে নিম্নলিখিত গণিতের বিষয়গুলো জানা অপরিহার্য:
+
+লিনিয়ার অ্যালজেবরা (Linear Algebra)
+
+ম্যাট্রিক্স অপারেশন, ভেক্টর, ডট প্রোডাক্ট
+
+স্কুল/কলেজ লেভেলের জ্ঞানই যথেষ্ট
+
+স্ট্যাটিস্টিক্স ও সম্ভাব্যতা (Statistics & Probability)
+
+ডেটা অ্যানালাইসিস, মিন, মিডিয়ান, স্ট্যান্ডার্ড ডেভিয়েশন
+
+ML মডেলের পারফরম্যান্স বুঝতে সাহায্য করে
+
+ক্যালকুলাস (Calculus)
+
+গ্রেডিয়েন্ট ডিসেন্ট, অপ্টিমাইজেশনে ব্যবহার হয়
+
+নোট:
+
+থিওরিটিক্যাল রিসার্চে গণিতের গভীর জ্ঞান লাগে।
+
+অ্যাপ্লিকেশন ডেভেলপমেন্টে বেসিক জ্ঞানই যথেষ্ট।
+
+খ. প্রোগ্রামিং (Programming)
+পাইথন (Python) – এআই/এমএলের জন্য সবচেয়ে জনপ্রিয় ভাষা
+
+লাইব্রেরি: NumPy, Pandas, Scikit-learn, TensorFlow
+
+জাভাস্ক্রিপ্ট (JavaScript) – ওয়েব-ভিত্তিক এআই অ্যাপসের জন্য
+
+৩. এআই শেখার ধাপসমূহ (Step-by-Step Learning Path)
+ধাপ ১: মেশিন লার্নিং (Machine Learning - ML)
+সুপারভাইজড লার্নিং (Supervised Learning)
+
+ক্লাসিফিকেশন (Classification): ইমেজ/টেক্সট ক্যাটেগরাইজেশন (যেমন: ফল চেনা)
+
+রিগ্রেশন (Regression): সংখ্যাভিত্তিক প্রেডিকশন (যেমন: বাড়ির দাম অনুমান)
+
+আনসুপারভাইজড লার্নিং (Unsupervised Learning)
+
+ক্লাস্টারিং (Clustering), ডাইমেনশনালিটি রিডাকশন
+
+এলগরিদম:
+
+লিনিয়ার রিগ্রেশন, ডিসিশন ট্রি, র‍্যান্ডম ফরেস্ট
+
+ধাপ ২: ডিপ লার্নিং (Deep Learning - DL)
+নিউরাল নেটওয়ার্ক (Neural Networks) – মানুষের ব্রেইনের অনুকরণে তৈরি
+
+মূল অ্যাপ্লিকেশন:
+
+NLP (প্রাকৃতিক ভাষা প্রক্রিয়াকরণ): ChatGPT, ট্রান্সলেশন
+
+কম্পিউটার ভিশন: ইমেজ রিকগনিশন, ফেস ডিটেকশন
+
+আর্কিটেকচার:
+
+RNN, LSTM, ট্রান্সফরমার (Transformer) – ChatGPT-এর ভিত্তি
+
+ধাপ ৩: জেনারেটিভ এআই (Generative AI)
+কাজ: টেক্সট, ইমেজ, ভয়েস জেনারেট করা
+
+ফ্রেমওয়ার্ক:
+
+LangChain, Hugging Face, LlamaIndex
+
+টেকনিক:
+
+RAG (Retrieval Augmented Generation): এক্সটার্নাল ডেটা ব্যবহার করে রেসপন্স ইম্প্রুভ করা
+
+ধাপ ৪: এজেন্টিক এআই (Agentic AI)
+কনসেপ্ট: স্বয়ংক্রিয় AI অ্যাসিসটেন্ট (যেমন: ফ্লাইট বুকিং, কাস্টমার সার্ভিস)
+
+টুলস:
+
+CrewAI, AutoGen, Google A3
+
+প্রোটোকল:
+
+MCP (Model Context Protocol) – LLM-এর সাথে এক্সটার্নাল ডেটা সংযোগের পদ্ধতি
+
+৪. ক্যারিয়ার সুযোগ (Career Opportunities)
+এলাকা	টেকনোলজি	চাকরির সুযোগ
+NLP	Transformer, BERT	চ্যাটবট, ট্রান্সলেশন সিস্টেম
+কম্পিউটার ভিশন	CNN, OpenCV	ফেসিয়াল রিকগনিশন, স্বয়ংক্রিয় ড্রাইভিং
+জেনারেটিভ এআই	LangChain, RAG	কন্টেন্ট জেনারেশন টুলস
+এজেন্টিক এআই	CrewAI, AutoGen	অটোমেশন, AI অ্যাসিসটেন্ট
+৫. শেখার রিসোর্স ও সময় (Resources & Timeline)
+সময়: বেসিক থেকে জেনারেটিভ এআই পর্যন্ত ১ বছর
+
+রিসোর্স:
+
+পাইথন → মেশিন লার্নিং → ডিপ লার্নিং → জেনারেটিভ এআই → এজেন্টিক এআই
+
+বাংলা টিউটোরিয়াল: NLP, RAG, MCP নিয়ে ইউটিউব টিউটোরিয়াল
+
+৬. উপসংহার (Conclusion)
+শুরু করুন: গণিত → পাইথন → মেশিন লার্নিং → ডিপ লার্নিং → জেনারেটিভ/এজেন্টিক এআই
+
+ফোকাস: রিয়েল-ওয়ার্ল্ড অ্যাপ্লিকেশন বানানো
+
+ভয় পাবেন না: এআই চাকরি নেবে না, বরং এআই-কে কাজে লাগানো শিখুন!
+
+"যারা এআই শিখবে, তারা অন্যদের চেয়ে এগিয়ে থাকবে।"
+
+📌 প্রশ্ন থাকলে কমেন্টে জানান! 🚀
